@@ -11,7 +11,7 @@ const map = new mapboxgl.Map({
 
 let markerDomEl = document.createElement('div');
 markerDomEl.style.width = "32px";
-markerDomEl.style.heights = "39px";
+markerDomEl.style.height = "39px";
 markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
 
 new mapboxgl.Marker().setLngLat([-74.009151, 40.705086]).addTo(map);
