@@ -1,7 +1,7 @@
 const mapboxgl = require("mapbox-gl");
 const markerBuilder = require('./marker.js');
 
-mapboxgl.accessToken = require("../mapboxToken").token;
+mapboxgl.accessToken = "pk.eyJ1IjoibWVsaGhlcnNoIiwiYSI6ImNqb2c4a2lnNDBjanozcHBuZ2kxOW03dWgifQ.yPWvIuGgF3V-7NvD7axhng";
 const map = new mapboxgl.Map({
   container: "map",
   center: [-74.009, 40.705],
