@@ -37,3 +37,24 @@
   .menu-item {
     padding: 0px 10px;
   }
+
+  #sideBarContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: fixed;
+    top: 65px;
+    right: 0;
+    height: 400px;
+    width: 120px;
+    z-index: 2;
+  }
+
+  .sideBarBox{
+    height: 35%;
+    width: 100%;
+    background-color: orange;
+  }
+
+
