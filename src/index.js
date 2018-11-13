@@ -1,3 +1,10 @@
-console.log("hello world")
+const mapboxgl = require('mapbox-gl');
 
-console.log("goodbye world")
+mapboxgl.accessToken = "Blah";
+
+const map = new mapboxgl.Map({
+  container: "map",
+  center: [-74.009, 40.705],
+  zoom: 12,
+  style: "mapbox://styles/mapbox/streets-v10"
+});
