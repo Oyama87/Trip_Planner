@@ -14,11 +14,22 @@
   
   #navbar {
     display: flex;
-    justify-content: space-between;
-    padding: 0px 50px;
-    background-color: steelblue;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 5px;
+    height: 40%;
+    width: 7%;
+    background-color: rgba(70,130,180, 0.75);
+    box-shadow: 5px -5px 5px rgba(70,130,180, 0.45);
     color: white;
     font-size: 1.2em;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: fixed;
+    top: 30%;
+    z-index: 2;
+    text-shadow: 3px -3px 3px rgba(55,55,55,0.5);
   }
   
   #logo {
@@ -30,31 +41,47 @@
   #menu {
     list-style-type: none;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-left: 0px;
   }
   
   .menu-item {
-    padding: 0px 10px;
+    padding: 10px 0px;
   }
 
-  #sideBarContainer{
+  #sideBarContainer {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
     position: fixed;
-    top: 65px;
-    right: 0;
-    height: 400px;
-    width: 120px;
+    top: 5%;
+    right: 25px;
+    height: 90%;
+    width: 20%;
     z-index: 2;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 25px;
+    box-shadow: 8px -8px 8px rgba(0,0,0,0.25)
   }
 
-  .sideBarBox{
-    height: 35%;
-    width: 100%;
+  .sideBarBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 46%;
+    width: 88%;
     background-color: orange;
+    box-shadow: 6px -6px 6px rgba(0,0,0,0.3);
+    border-radius: 25px;
+    padding-left: 7%;
   }
-
-
+  
+  .sideBarBox input {
+    border-radius: 10px;
+    outline: none;
+    width: 80%;
+  }
